@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | VAUN Media</title>
+    <meta
+      name="description"
+      content="Request a quote from VAUN Media. Call 0406 710 580 or email vaun.org@outlook.com — available 24/7 worldwide."
+    />
+    <link rel="icon" href="./images/logo.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="./" aria-label="VAUN Media home">
+          <img class="brand-logo" src="./images/logo.svg" alt="VAUN Media" width="180" height="52" />
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav" id="site-nav" aria-label="Primary">
+          <a href="./">Home</a>
+          <a href="./services.html">Services</a>
+          <a href="./contact.html" aria-current="page">Contact Us</a>
+        </nav>
+        <a class="header-phone" href="tel:0406710580">0406 710 580</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow" style="color: #8ec5ff">Contact</p>
+          <h1>Request a quote.</h1>
+          <p>
+            Tell us about the entertainment or media work you need — we’ll reply fast, day or night.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-grid">
+          <aside class="contact-card reveal">
+            <h2>Direct contact</h2>
+            <div class="contact-rows">
+              <div>
+                <strong>Phone</strong>
+                <a href="tel:0406710580">0406 710 580</a>
+              </div>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:vaun.org@outlook.com">vaun.org@outlook.com</a>
+              </div>
+              <div>
+                <strong>Hours</strong>
+                <span>24/7 including emergencies</span>
+              </div>
+              <div>
+                <strong>Area</strong>
+                <span>Worldwide · statewide travel</span>
+              </div>
+            </div>
+          </aside>
+
+          <div class="reveal">
+            <h2 class="section-title" style="margin-bottom: 1.15rem">Project enquiry</h2>
+            <form class="form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+              <input type="hidden" name="form-name" value="contact" />
+              <p class="sr-only">
+                <label>Don’t fill this out: <input name="bot-field" /></label>
+              </p>
+
+              <div class="form-row two">
+                <div class="field">
+                  <label for="name">Name</label>
+                  <input id="name" name="name" type="text" autocomplete="name" required />
+                </div>
+                <div class="field">
+                  <label for="phone">Phone</label>
+                  <input id="phone" name="phone" type="tel" autocomplete="tel" required />
+                </div>
+              </div>
+
+              <div class="form-row two">
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" autocomplete="email" required />
+                </div>
+                <div class="field">
+                  <label for="service">Interest</label>
+                  <select id="service" name="service">
+                    <option value="Custom entertainment">Custom entertainment</option>
+                    <option value="Media production">Media production</option>
+                    <option value="Urgent / emergency">Urgent / emergency</option>
+                    <option value="General quote">General quote</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="message">Project details</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Timeline, location, what you need…"
+                  required
+                ></textarea>
+              </div>
+
+              <p class="form-note">Or call <a href="tel:0406710580">0406 710 580</a> anytime.</p>
+              <button class="btn btn-primary" type="submit">Send quote request</button>
+              <p class="form-status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <img class="footer-logo" src="./images/logo.svg" alt="VAUN Media" width="200" height="58" />
+          <p>Clean, modern entertainment &amp; custom media — worldwide.</p>
+        </div>
+        <div>
+          <h3>Pages</h3>
+          <div class="footer-links">
+            <a href="./">Home</a>
+            <a href="./services.html">Services</a>
+            <a href="./contact.html">Contact Us</a>
+          </div>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <div class="footer-contact">
+            <a href="tel:0406710580">0406 710 580</a>
+            <a href="mailto:vaun.org@outlook.com">vaun.org@outlook.com</a>
+            <span>24/7 · Free to enquire</span>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© <span data-year></span> VAUN Media</span>
+        <span>Eco friendly · Guaranteed</span>
+      </div>
+    </footer>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
